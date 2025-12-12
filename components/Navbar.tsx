@@ -1,13 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-// Removed unused react-scroll import
-// I'll stick to standard anchor links for simplicity or implement a smooth scroll handler.
-// Actually, standard Next.js Link with ids works fine for single page.
-
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 
 const navLinks = [
     { name: "Home", href: "#hero" },
@@ -45,7 +41,7 @@ export default function Navbar() {
                 </Link>
 
                 {/* Desktop Menu */}
-                <div className="hidden md:flex space-x-8">
+                <div className="hidden md:flex items-center space-x-8">
                     {navLinks.map((link) => (
                         <Link
                             key={link.name}
@@ -56,6 +52,15 @@ export default function Navbar() {
                             <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
                         </Link>
                     ))}
+                    <a
+                        href="https://docs.google.com/document/d/1Rdyt_AKZ3n5ADONtisQyKfxG1-3cQkBoiBdyJYcKwuo/edit?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-4 py-2 rounded-full border border-primary/50 text-white hover:bg-primary hover:border-transparent transition-all shadow-[0_0_10px_rgba(255,0,128,0.2)] hover:shadow-[0_0_20px_rgba(255,0,128,0.6)]"
+                    >
+                        <Download size={16} />
+                        <span className="text-sm font-bold">Resume</span>
+                    </a>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -80,6 +85,15 @@ export default function Navbar() {
                                 {link.name}
                             </Link>
                         ))}
+                        <a
+                            href="https://docs.google.com/document/d/1Rdyt_AKZ3n5ADONtisQyKfxG1-3cQkBoiBdyJYcKwuo/edit?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 text-secondary hover:text-white transition-colors pt-2 border-t border-white/10"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            <Download size={16} /> Resume
+                        </a>
                     </motion.div>
                 )}
             </div>
