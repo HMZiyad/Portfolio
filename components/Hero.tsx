@@ -38,7 +38,7 @@ export default function Hero() {
                     transition={{ delay: 0.5 }}
                     className="text-xl md:text-2xl text-gray-300 font-light"
                 >
-                    I am a <span className="text-primary font-semibold">Software Engineer</span> &{" "}
+                    I am a <span className="text-primary font-semibold">AI Product Engineer</span> &{" "}
                     <span className="text-accent font-semibold">AI Specialist</span>
                 </motion.div>
 
@@ -53,6 +53,9 @@ export default function Hero() {
                     </a>
                     <a href="#contact" className="px-8 py-3 rounded-full border border-secondary text-secondary font-bold hover:bg-secondary/10 transition-colors">
                         Contact Me
+                    </a>
+                    <a href="https://calendar.app.google/UoDsHYg7F3GVpByU8" target="_blank" rel="noopener noreferrer" className="px-8 py-3 rounded-full border border-primary text-primary font-bold hover:bg-primary/10 transition-colors">
+                        Book a Meeting
                     </a>
                 </motion.div>
             </div>

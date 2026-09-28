@@ -53,7 +53,7 @@ export default function Navbar() {
                         </Link>
                     ))}
                     <a
-                        href="https://docs.google.com/document/d/1Rdyt_AKZ3n5ADONtisQyKfxG1-3cQkBoiBdyJYcKwuo/edit?usp=sharing"
+                        href="/resume.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-2 px-4 py-2 rounded-full border border-primary/50 text-white hover:bg-primary hover:border-transparent transition-all shadow-[0_0_10px_rgba(255,0,128,0.2)] hover:shadow-[0_0_20px_rgba(255,0,128,0.6)]"
@@ -86,7 +86,7 @@ export default function Navbar() {
                             </Link>
                         ))}
                         <a
-                            href="https://docs.google.com/document/d/1Rdyt_AKZ3n5ADONtisQyKfxG1-3cQkBoiBdyJYcKwuo/edit?usp=sharing"
+                            href="/resume.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-2 text-secondary hover:text-white transition-colors pt-2 border-t border-white/10"
