@@ -110,6 +110,12 @@ export const achievements = [
 
 export const projects = [
     {
+        title: "Good Car Imports",
+        description: "Developed the official website for a leading car importer in BD.",
+        tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+        link: "https://goodcarimports.com",
+    },
+    {
         title: "Calm-Mind",
         description: "An intelligent, AI-powered meditation application designing personalized sessions based on mood and needs.",
         tech: ["TypeScript", "AI", "React"],
